@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+
+  font-family: 'Poppins', sans-serif;
+}
+/* customize scroll bar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 255, 0.705);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.active, .logout{
+  color: white;
+  background-color: rgb(58, 58, 197);
+  font-weight: bolder;
+  padding: 5px 10px;
+  border-radius: 50px;
+  box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.5);
+}
+task-container{
+  height: 90vh;
+  background-color: whitesmoke;
+}
+
+.addTask{
+  height: 10vh;
+  background-color: transparent;
+  padding: 10px;
+}
+.outlet{
+  height:80vh;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  padding: 1rem;
+  overflow: auto;
+}
+.indicator{
+  display: flex;
+  align-items: center;
+  height:10vh;
+  margin:auto 10px;
+}
+/* Ensure Background fills the screen */
+/* Background spans full viewport and stays fixed */
+.background-animation {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0; /* Stays behind other components */
+  pointer-events: none; /* Allows clicks to pass through */
+  overflow: hidden; /* Prevents scroll bars if Lottie animation exceeds bounds */
+}
+
+/* Foreground content appears above the background */
+.foreground-content {
+  z-index:10 ; /* Renders above the background */
+}
+
